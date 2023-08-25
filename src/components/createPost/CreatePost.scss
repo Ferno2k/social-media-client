@@ -1,0 +1,59 @@
+.CreatePost {
+  display: flex;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 1.25em;
+  gap: 1.25em;
+  margin-top: 1.25em;
+
+  .left-part {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: content;
+  }
+
+  .right-part {
+    flex-grow: 1;
+    margin-top: 0;
+
+    input {
+      width: 100%;
+      padding: 0.5em 1em;
+      border: 1px solid var(--border-color);
+      border-radius: 4px;
+    }
+
+    .img-container {
+      margin-top: 1.5rem;
+
+      .post-img {
+        width: 100%;
+        aspect-ratio: 16/9;
+      }
+    }
+
+    .labelImg {
+      display: inline-block;
+      background-color: var(--accent-color);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .inputImg {
+      display: none;
+    }
+
+    .bottom-part {
+      display: flex;
+      margin-top: 1.5rem;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
